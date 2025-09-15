@@ -4,7 +4,7 @@
 
 SIML is an expanded version of the original SIDR method: a sequence identification/decontamination tool that classifies unknown genetic material collected from environmental samples.
 
-The majority of SIML is written in C to decrease execution time of data parsing, while machine learning models remain programmed in Python using Scikit-learn. SIML utilizes the Python3 developer package to interface between C and Python, therefore allowing increased runtime efficiency. We're also adding an extra model for expectation maximization of kmer distribution data to increase robustness of decision tree classification and decrease classification errors.
+This program is a demo version of the C backend code used to achieve massive processing speed boosts on genomic data, as compared to standard Python libraries. Data is processed and cleaned in C, then ported to a Python environment for machine learning. The machine learning routines are not shown here, as they were directly rewritten from the original SIDR method. The major modification was writing the manual ETL for data processing and transmission across environments.
 
 Original SIDR method: https://doi.org/10.1186/s12859-017-1941-0
 
